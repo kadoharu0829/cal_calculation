@@ -2,7 +2,7 @@ class CreateFoods < ActiveRecord::Migration[6.0]
   def change
     create_table :foods do |t|
       t.string :name # 食品名
-      t.float :calorie # カロリー
+      t.integer :calorie # カロリー
       t.float :protein # たんぱく質
       t.float :lipid # 脂質
       t.float :carbohydrate # 炭水化物

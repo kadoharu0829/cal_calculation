@@ -1,0 +1,147 @@
+<header class="bg-dark py-5">
+    <div class="container px-4 px-lg-5 my-5">
+    <div class="text-center text-white">
+        <h1 class="display-4 fw-bolder">あなたの一日の栄養素は…</h1>
+        <p class="lead fw-normal text-white-50 mb-0">The nutrients of your day is...</p>
+    </div>
+    </div>
+</header>
+<section class="page-section" id="services">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h4 class="my-3">エネルギー：562(kcal)</h4>
+                <p class="text-muted">エネルギーについて説明を書く！</p>
+            </div>
+            <div class="col-md-4">
+                <h4 class="my-3">たんぱく質：20.1(g)</h4>
+                <p class="text-muted">たんぱく質について説明を書く！</p>
+            </div>
+            <div class="col-md-4">
+                <h4 class="my-3">脂質：20.1(g)</h4>
+                <p class="text-muted">脂質について説明を書く！</p>
+            </div>
+            <div class="col-md-4">
+                <h4 class="my-3">炭水化物：20.1(g)</h4>
+                <p class="text-muted">炭水化物について説明を書く！</p>
+            </div>
+            <div class="col-md-4">
+                <h4 class="my-3">食塩相当量：20.1(g)</h4>
+                <p class="text-muted">食塩相当量について説明を書く！</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-5">
+  <div class="container px-4 px-lg-5">
+    <h3 class="fw-bolder mb-5">内訳</h3>
+  </div>
+  <div class="container px-4 px-lg-5 mt-5">
+      <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+          <div class="col mb-5">
+              <div class="card h-100">
+                  <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                  <div class="card-body p-4">
+                      <div class="text-center">
+                        <h5 class="fw-bolder">食べ物名A</h5>
+                      </div>
+                  </div>
+                    <div class="card-footer border-top-0 bg-transparent">
+                        <ul>
+                            <li>エネルギー：</li>
+                            <li>たんぱく質：</li>
+                            <li>脂質：</li>
+                            <li>炭水化物：</li>
+                            <li>食塩相当量：</li>
+                        </ul>
+                    </div>
+              </div>
+          </div>
+          <div class="col mb-5">
+              <div class="card h-100">
+                  <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                  <div class="card-body p-4">
+                      <div class="text-center">
+                        <h5 class="fw-bolder">食べ物名B</h5>
+                      </div>
+                  </div>
+                    <div class="card-footer border-top-0 bg-transparent">
+                        <ul>
+                            <li>エネルギー：</li>
+                            <li>たんぱく質：</li>
+                            <li>脂質：</li>
+                            <li>炭水化物：</li>
+                            <li>食塩相当量：</li>
+                        </ul>
+                    </div>
+              </div>
+          </div>
+          <div class="col mb-5">
+              <div class="card h-100">
+                  <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                  <div class="card-body p-4">
+                      <div class="text-center">
+                        <h5 class="fw-bolder">食べ物名C</h5>
+                      </div>
+                  </div>
+                    <div class="card-footer border-top-0 bg-transparent">
+                        <ul>
+                            <li>エネルギー：</li>
+                            <li>たんぱく質：</li>
+                            <li>脂質：</li>
+                            <li>炭水化物：</li>
+                            <li>食塩相当量：</li>
+                        </ul>
+                    </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container px-4 px-lg-5 mt-5">
+      <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+          <div class="col mb-5">
+              <div class="card h-100">
+                  <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                  <div class="card-body p-4">
+                      <div class="text-center">
+                        <h5 class="fw-bolder">食べ物名A</h5>
+                      </div>
+                  </div>
+                    <div class="card-footer border-top-0 bg-transparent">
+                        <ul>
+                            <li>エネルギー：</li>
+                            <li>たんぱく質：</li>
+                            <li>脂質：</li>
+                            <li>炭水化物：</li>
+                            <li>食塩相当量：</li>
+                        </ul>
+                    </div>
+              </div>
+          </div>
+          <div class="col mb-5">
+              <div class="card h-100">
+                  <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                  <div class="card-body p-4">
+                      <div class="text-center">
+                        <h5 class="fw-bolder">食べ物名B</h5>
+                      </div>
+                  </div>
+                    <div class="card-footer border-top-0 bg-transparent">
+                        <ul>
+                            <li>エネルギー：</li>
+                            <li>たんぱく質：</li>
+                            <li>脂質：</li>
+                            <li>炭水化物：</li>
+                            <li>食塩相当量：</li>
+                        </ul>
+                    </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container px-lg-5">
+      <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
+        <a class="btn btn-primary btn-lg" href="#!">メニューを選択し直す</a>
+      </div>
+  </div>
+</section>
