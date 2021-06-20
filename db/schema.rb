@@ -13,13 +13,13 @@
 ActiveRecord::Schema.define(version: 2021_06_19_144221) do
 
   create_table "foods", force: :cascade do |t|
-    t.string "name"
-    t.integer "calorie"
-    t.float "protein"
-    t.float "lipid"
-    t.float "carbohydrate"
-    t.float "salt_equivalent"
-    t.integer "kind"
+    t.string "name", null: false
+    t.integer "calorie", null: false
+    t.float "protein", null: false
+    t.float "lipid", null: false
+    t.float "carbohydrate", null: false
+    t.float "salt_equivalent", null: false
+    t.integer "kind", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

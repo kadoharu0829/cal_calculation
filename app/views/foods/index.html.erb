@@ -1,157 +1,79 @@
 <header class="bg-dark py-5">
-    <div class="container px-4 px-lg-5 my-5">
+  <div class="container px-4 px-lg-5 my-5">
     <div class="text-center text-white">
         <h1 class="display-4 fw-bolder">食生活、チェックしてみませんか？</h1>
         <p class="lead fw-normal text-white-50 mb-0">Why don't you check your eating habits?</p>
     </div>
-    </div>
+  </div>
 </header>
-<section class="py-5">
-  <div class="container px-4 px-lg-5">
-    <h2 class="fw-bolder border-bottom border-secondary mb-5">食べたいメニューをそれぞれ選択してください</h2>
-  </div>
-  <div class="container px-4 px-lg-5">
-    <h3 class="fw-bolder mb-5">朝食(固定)</h3>
-  </div>
-  <div class="container px-4 px-lg-5 mt-5">
+<%= form_with url: foods_results_path, method: :get, local: true do |f| %>
+  <section class="py-5">
+    <div class="container px-4 px-lg-5">
+      <h2 class="fw-bolder border-bottom border-secondary mb-5">食べたいメニューをそれぞれ選択してください</h2>
+    </div>
+    <div class="container px-4 px-lg-5">
+      <h3 class="fw-bolder mb-5">朝食(固定)</h3>
+    </div>
+    <div class="container px-4 px-lg-5 mt-5">
       <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-          <div class="col mb-5">
-              <div class="card h-100">
-                  <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                  <div class="card-body p-4">
-                      <div class="text-center">
-                        <h5 class="fw-bolder">食べ物名A</h5>
-                      </div>
-                  </div>
+      <% @foods.breakfast.each do |food| %>
+      <div class="col mb-5">
+      　<div class="card h-100">
+          <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+              <div class="card-body p-4">
+              <div class="text-center">
+                  <h5 class="fw-bolder"><%= food.name %></h5>
               </div>
-          </div>
-          <div class="col mb-5">
-              <div class="card h-100">
-                  <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                  <div class="card-body p-4">
-                      <div class="text-center">
-                        <h5 class="fw-bolder">食べ物名B</h5>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col mb-5">
-              <div class="card h-100">
-                  <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                  <div class="card-body p-4">
-                      <div class="text-center">
-                        <h5 class="fw-bolder">食べ物名C</h5>
-                      </div>
-                  </div>
               </div>
           </div>
       </div>
-  </div>
-  <div class="container px-4 px-lg-5">
-    <h3 class="fw-bolder mb-5">昼食</h3>
-  </div>
-  <div class="container px-4 px-lg-5 mt-5">
-      <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-          <div class="col mb-5">
-              <div class="card h-100">
-                  <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                  <div class="card-body p-4">
-                      <div class="form-check text-center">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1"><h5 class="fw-bolder">食べ物名A</h5></label>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col mb-5">
-              <div class="card h-100">
-                  <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                  <div class="card-body p-4">
-                      <div class="form-check text-center">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1"><h5 class="fw-bolder">食べ物名B</h5></label>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col mb-5">
-              <div class="card h-100">
-                  <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                  <div class="card-body p-4">
-                      <div class="form-check text-center">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1"><h5 class="fw-bolder">食べ物名C</h5></label>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col mb-5">
-              <div class="card h-100">
-                  <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                  <div class="card-body p-4">
-                      <div class="form-check text-center">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1"><h5 class="fw-bolder">食べ物名C</h5></label>
-                      </div>
-                  </div>
-              </div>
-          </div>
+      <% end %>
       </div>
-  </div>
-  <div class="container px-4 px-lg-5">
-    <h3 class="fw-bolder mb-5">夕食</h3>
-  </div>
-  <div class="container px-4 px-lg-5 mt-5">
+    </div>
+    <div class="container px-4 px-lg-5">
+      <h3 class="fw-bolder mb-5">昼食</h3>
+    </div>
+    <div class="container px-4 px-lg-5 mt-5">
       <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-          <div class="col mb-5">
-              <div class="card h-100">
-                  <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                  <div class="card-body p-4">
-                      <div class="form-check text-center">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1"><h5 class="fw-bolder">食べ物名A</h5></label>
-                      </div>
-                  </div>
+      <% @foods.lunch.each do |food| %>
+        <div class="col mb-5">
+          <div class="card h-100">
+            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+              <div class="card-body p-4">
+                <div class="form-check">
+                  <%= f.radio_button food.kind, "#{food.id}" %>
+                  <%= f.label "#{food.kind}_#{food.id}", "#{food.name}" %>
+                </div>
               </div>
           </div>
-          <div class="col mb-5">
-              <div class="card h-100">
-                  <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                  <div class="card-body p-4">
-                      <div class="form-check text-center">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1"><h5 class="fw-bolder">食べ物名B</h5></label>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col mb-5">
-              <div class="card h-100">
-                  <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                  <div class="card-body p-4">
-                      <div class="form-check text-center">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1"><h5 class="fw-bolder">食べ物名C</h5></label>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col mb-5">
-              <div class="card h-100">
-                  <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                  <div class="card-body p-4">
-                      <div class="form-check text-center">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1"><h5 class="fw-bolder">食べ物名C</h5></label>
-                      </div>
-                  </div>
-              </div>
-          </div>
+        </div>
+        <% end %>
       </div>
-  </div>
-  <div class="container px-lg-5">
+    </div>
+    <div class="container px-4 px-lg-5">
+      <h3 class="fw-bolder mb-5">夕食</h3>
+    </div>
+    <div class="container px-4 px-lg-5 mt-5">
+      <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+      <% @foods.dinner.each do |food| %>
+        <div class="col mb-5">
+          <div class="card h-100">
+            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+              <div class="card-body p-4">
+                <div class="form-check">
+                  <%= f.radio_button food.kind, "#{food.id}" %>
+                  <%= f.label "#{food.kind}_#{food.id}", "#{food.name}" %>
+                </div>
+              </div>
+          </div>
+        </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="container px-lg-5">
       <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
-        <a class="btn btn-primary btn-lg" href="#!">一日の栄養素を計算する</a>
+        <%= f.submit '一日の栄養素を計算する', class: 'btn btn-primary btn-lg' %>
       </div>
-  </div>
-</section>
+    </div>
+  </section>
+<% end %>

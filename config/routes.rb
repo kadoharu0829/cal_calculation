@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
-  resources :foods
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  # トップページ
+  root to: 'foods#index'
+
+  # 結果画面
+  namespace :foods do
+    get 'results', to: 'results#index'
+  end
 end
