@@ -1,24 +1,45 @@
-# README
+# 概要
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+cal_calculation では、決まったメニューを選択し、エネルギーやたんぱく質などを算出・表示するシステムです。
 
-Things you may want to cover:
+大学での研究内容をシステムで説明出来るよう構築しました。
 
-* Ruby version
+# 使用言語
 
-* System dependencies
+* 言語：Ruby(2.6.7)
 
-* Configuration
+* フレームワーク：Ruby on Rails(6.0.3)
 
-* Database creation
+* RDBMS：SQLite3(バージョンは Gemfile.lock 参照)
 
-* Database initialization
+# 使い方
 
-* How to run the test suite
+* gem インストール
 
-* Services (job queues, cache servers, search engines, etc.)
+  ```
+  bundle install
+  ```
 
-* Deployment instructions
+* データベース作成
 
-* ...
+  ```
+  rails db:create
+  ```
+
+* マイグレーション実行
+
+  ```
+  rails db:migrate
+  ```
+
+* 初期データ投入
+
+  ```
+  rails db:seed
+  ```
+
+* Rails アプリケーション起動
+
+  ```
+  rails s
+  ```

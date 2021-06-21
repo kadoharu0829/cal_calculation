@@ -57,7 +57,7 @@ Food.create!(
       lipid: 16.2,
       carbohydrate: 9.4,
       salt_equivalent: 2.3,
-      image_name: nil,
+      image_name: 'green_curry.png',
       kind: 2
     },
     {
