@@ -11,6 +11,11 @@
     <div class="container px-4 px-lg-5">
       <h2 class="fw-bolder border-bottom border-secondary mb-5">食べたいメニューをそれぞれ選択してください</h2>
     </div>
+    <% if flash.alert %>
+    <div class="container px-4 px-lg-5">
+      <h5 class="fw-bolder mb-5 text-danger"><%= flash.alert %></h5>
+    </div>
+    <% end %>
     <div class="container px-4 px-lg-5">
       <h3 class="fw-bolder mb-5">朝食(固定)</h3>
     </div>
@@ -19,7 +24,7 @@
       <% @foods.breakfast.each do |food| %>
       <div class="col mb-5">
       　<div class="card h-100">
-          <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+          <%= image_tag "#{food.image_name}", class: 'card-img-top', alt: "..." %>
               <div class="card-body p-4">
               <div class="text-center">
                   <h5 class="fw-bolder"><%= food.name %></h5>
@@ -38,7 +43,7 @@
       <% @foods.lunch.each do |food| %>
         <div class="col mb-5">
           <div class="card h-100">
-            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+            <%= image_tag "#{food.image_name}", class: 'card-img-top', alt: "..." %>
               <div class="card-body p-4">
                 <div class="form-check">
                   <%= f.radio_button food.kind, "#{food.id}" %>
@@ -58,7 +63,7 @@
       <% @foods.dinner.each do |food| %>
         <div class="col mb-5">
           <div class="card h-100">
-            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+            <%= image_tag "#{food.image_name}", class: 'card-img-top', alt: "..." %>
               <div class="card-body p-4">
                 <div class="form-check">
                   <%= f.radio_button food.kind, "#{food.id}" %>

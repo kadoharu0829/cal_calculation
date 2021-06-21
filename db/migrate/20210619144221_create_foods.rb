@@ -7,6 +7,7 @@ class CreateFoods < ActiveRecord::Migration[6.0]
       t.float :lipid, null: false # 脂質
       t.float :carbohydrate, null: false # 炭水化物
       t.float :salt_equivalent, null: false # 食塩相当量
+      t.string :image_name # 画像名
       t.integer :kind, null: false # 区分
 
       t.timestamps

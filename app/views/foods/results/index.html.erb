@@ -42,7 +42,7 @@
         <% @foods_breakfast.each do |food| %>
           <div class="col mb-5">
               <div class="card h-100">
-                  <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                  <%= image_tag "#{food.image_name}", class: 'card-img-top', alt: "..." %>
                   <div class="card-body p-4">
                       <div class="text-center">
                         <h5 class="fw-bolder"><%= food.name %></h5>
@@ -67,7 +67,7 @@
         <% @foods_selected.each do |food| %>
           <div class="col mb-5">
               <div class="card h-100">
-                  <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                  <%= image_tag "#{food.image_name}", class: 'card-img-top', alt: "..." %>
                   <div class="card-body p-4">
                       <div class="text-center">
                         <h5 class="fw-bolder"><%= food.name %></h5>

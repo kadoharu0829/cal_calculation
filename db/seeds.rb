@@ -7,6 +7,7 @@ Food.create!(
       lipid: 3.7,
       carbohydrate: 13.6,
       salt_equivalent: 0.1,
+      image_name: 'snackpan.png',
       kind: 1
     },
     {
@@ -16,6 +17,7 @@ Food.create!(
       lipid: 5.7,
       carbohydrate: 9.5,
       salt_equivalent: 1.3,
+      image_name: 'fish_sausage.png',
       kind: 1
     },
     {
@@ -25,6 +27,7 @@ Food.create!(
       lipid: 0,
       carbohydrate: 16.2,
       salt_equivalent: 0.7,
+      image_name: 'vegetable_juice.png',
       kind: 1
     },
     {
@@ -34,6 +37,7 @@ Food.create!(
       lipid: 16.4,
       carbohydrate: 14.2,
       salt_equivalent: 2.1,
+      image_name: 'butter_chicken_curry.png',
       kind: 2
     },
     {
@@ -43,6 +47,7 @@ Food.create!(
       lipid: 14.3,
       carbohydrate: 15.0,
       salt_equivalent: 1.9,
+      image_name: 'stewed_lamb.png',
       kind: 2
     },
     {
@@ -52,6 +57,7 @@ Food.create!(
       lipid: 16.2,
       carbohydrate: 9.4,
       salt_equivalent: 2.3,
+      image_name: nil,
       kind: 2
     },
     {
@@ -61,6 +67,7 @@ Food.create!(
       lipid: 12.8,
       carbohydrate: 10.6,
       salt_equivalent: 1.7,
+      image_name: 'broiled_tomato_and_chicken.png',
       kind: 2
     },
     {
@@ -70,6 +77,7 @@ Food.create!(
       lipid: 11.2,
       carbohydrate: 19.3,
       salt_equivalent: 2.2,
+      image_name: 'pork_and_eggplant_with_miso.png',
       kind: 3
     },
     {
@@ -79,6 +87,7 @@ Food.create!(
       lipid: 16,
       carbohydrate: 28.7,
       salt_equivalent: 2.3,
+      image_name: 'homme_hayashi.png',
       kind: 3
     },
     {
@@ -88,6 +97,7 @@ Food.create!(
       lipid: 12.7,
       carbohydrate: 10.7,
       salt_equivalent: 1.5,
+      image_name: 'beef_miso.png',
       kind: 3
     },
     {
@@ -97,6 +107,7 @@ Food.create!(
       lipid: 16.3,
       carbohydrate: 19.8,
       salt_equivalent: 2.0,
+      image_name: 'japanese_style_hamburger.png',
       kind: 3
     }
   ]

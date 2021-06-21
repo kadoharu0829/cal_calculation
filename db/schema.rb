@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2021_06_19_144221) do
     t.float "lipid", null: false
     t.float "carbohydrate", null: false
     t.float "salt_equivalent", null: false
+    t.string "image_name"
     t.integer "kind", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
