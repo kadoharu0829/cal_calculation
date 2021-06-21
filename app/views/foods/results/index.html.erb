@@ -12,23 +12,23 @@
 			<% total_foods = @foods_breakfast + @foods_selected %>
 			<div class="col-md-4">
 				<h4 class="my-3"><%= view_calorie(total_foods.pluck(:calorie).sum.round(2)) %></h4>
-				<p class="text-muted">エネルギーについて説明を書く！</p>
+				<p class="text-muted">人間が身体を動かすために必要な活動の源。三大栄養素に含まれている栄養成分の含有量(g)にそれぞれのエネルギー(kcal)を掛けて合算したもの。</p>
 			</div>
 			<div class="col-md-4">
 				<h4 class="my-3"><%= view_protein(total_foods.pluck(:protein).sum.round(2)) %></h4>
-				<p class="text-muted">たんぱく質について説明を書く！</p>
+				<p class="text-muted">人の体の約20%を占める。皮膚や髪の毛、筋肉などを形成し、ホルモンや免疫物質などの調整機能をつくる材料にもなっている。1gあたり4kcalのエネルギー量を含んでいる。</p>
 			</div>
 			<div class="col-md-4">
 				<h4 class="my-3"><%= view_lipid(total_foods.pluck(:lipid).sum.round(2)) %></h4>
-				<p class="text-muted">脂質について説明を書く！</p>
+				<p class="text-muted">ホルモンや細胞膜、角膜を構成したり、皮下脂肪として、臓器を保護したり、体を寒冷から守ったりする働きがある。また、脂溶性ビタミン(ビタミンA・D・E・K)の吸収を促すなどの役割もある。1gあたり9kcalのエネルギー量を含んでいる。</p>
 			</div>
 			<div class="col-md-4">
 				<h4 class="my-3"><%= view_carbohydrate(total_foods.pluck(:carbohydrate).sum.round(2)) %></h4>
-				<p class="text-muted">炭水化物について説明を書く！</p>
+				<p class="text-muted">ブドウ糖や果糖などの単糖から、構成されているものの総称。大きく分けると、体内に吸収されてエネルギー源になる「糖質」と、消化吸収されずエネルギーにならない「食物繊維」に分けることができる。1gあたり4kcalのエネルギー量を含む。</p>
 			</div>
 			<div class="col-md-4">
 				<h4 class="my-3"><%= view_salt_equivalent(total_foods.pluck(:salt_equivalent).sum.round(2)) %></h4>
-				<p class="text-muted">食塩相当量について説明を書く！</p>
+				<p class="text-muted">食品の中に含まれる全てのナトリウムを食塩由来とした場合の食塩の量を計算したもの。ナトリウムを食塩に変えた値のこと。</p>
 			</div>
 		</div>
 	</div>
